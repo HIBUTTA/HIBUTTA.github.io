@@ -1,4 +1,4 @@
-# ⚡ Dimuthu Prabodha | Mechatronics Portfolio
+# ⚡ Dimuthu Praboda | Mechatronics Portfolio
 
 ![Tech Stack](https://img.shields.io/badge/Tech-HTML5%20%7C%20CSS3%20%7C%20JS-00f3ff?style=for-the-badge)
 ![Status](https://img.shields.io/badge/System-ONLINE-success?style=for-the-badge)
@@ -8,8 +8,8 @@ Welcome to my personal engineering portfolio. This website showcases my work in 
 It features a high-performance, static architecture designed with a "Cyber-Industrial" aesthetic, ensuring fast load times and a unique visual identity.
 
 ## 🚀 Live Demo
-**[View the Live Portfolio](hibutta.github.io)**
-*(Replace `yourusername` with your actual GitHub username)*
+**[View the Live Portfolio](https://hibutta.github.io/DimuthuPortfolio/)**
+*(Note: If your repository is named something other than "DimuthuPortfolio", remove that part from the link above)*
 
 ---
 
@@ -40,7 +40,7 @@ It features a high-performance, static architecture designed with a "Cyber-Indus
 ## 📂 Project Structure
 
 ```text
-DimuthuPortfolio/
+/ (Root Directory)
 ├── index.html          # Main entry point
 ├── css/
 │   └── style.css       # Global styles, variables, and animations
