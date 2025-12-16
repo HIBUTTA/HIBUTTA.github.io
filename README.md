@@ -8,7 +8,7 @@ Welcome to my personal engineering portfolio. This website showcases my work in 
 It features a high-performance, static architecture designed with a "Cyber-Industrial" aesthetic, ensuring fast load times and a unique visual identity.
 
 ## 🚀 Live Demo
-**[View the Live Portfolio](https://yourusername.github.io/DimuthuPortfolio/)**
+**[View the Live Portfolio](hibutta.github.io)**
 *(Replace `yourusername` with your actual GitHub username)*
 
 ---
