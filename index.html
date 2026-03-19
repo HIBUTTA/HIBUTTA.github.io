@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Dimuthu Prabodha - Mechatronics Engineer, IoT Specialist & Drama Artist">
+    <title>Dimuthu Prabodha | Mechatronics Engineer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link id="dynamic-favicon" rel="icon" type="image/png" href="assets/profile.webp">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-bar"></div>
+
+    <div class="bg-grid"></div>
+    <div id="particles-js"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">DIMUTHU</a>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#about" class="nav-link">INFO</a></li>
+                <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="#achievements" class="nav-link">TIMELINE</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+
+            <button id="theme-toggle" class="btn-theme" aria-label="Toggle Vibe">
+                <i class="fas fa-mask"></i>
+            </button>
+
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <a href="#home" class="mobile-link">HOME</a>
+        <a href="#about" class="mobile-link">INFO</a>
+        <a href="#skills" class="mobile-link">SKILLS</a>
+        <a href="#projects" class="mobile-link">PROJECTS</a>
+        <a href="#achievements" class="mobile-link">TIMELINE</a>
+        <a href="#contact" class="mobile-link">CONTACT</a>
+    </div>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="home" class="hero-section">
+        <div class="container hero-content">
+            
+            <div class="profile-container" data-aos="zoom-in">
+                <div class="spin-ring-dashed"></div> 
+                <div class="spin-ring-dashed spin-ring-reverse"></div>
+                <div class="profile-img-box">
+                    <img src="assets/profile.webp" alt="Dimuthu Prabodha">
+                </div>
+            </div>
+
+            <div class="hero-text" data-aos="fade-up">
+                <h1 class="glitch-text" data-text="DIMUTHU PRABODHA">DIMUTHU PRABODHA</h1>
+                <div class="role-wrapper">
+                    <span id="typewriter"></span><span class="cursor">|</span>
+                </div>
+                <p class="tagline">Merging Precision Robotics with Human Emotion</p>
+                
+                <div class="hero-btns">
+                    <a href="assets/Dimuthu_Prabodha_CV.pdf" class="btn primary-btn" target="_blank">
+                        <i class="fas fa-file-pdf"></i> DOWNLOAD CV
+                    </a>
+                    <a href="#projects" class="btn outline-btn">
+                        <i class="fas fa-microchip"></i> VIEW PROJECTS
+                    </a>
+                    <a href="https://github.com/hibutta" target="_blank" class="btn ghost-btn">
+                        <i class="fab fa-github"></i> GITHUB
+                    </a>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span>SCROLL DOWN</span>
+                <div class="mouse-icon">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">01. SYSTEM SPECS</h2>
+            
+            <div class="terminal-card" data-aos="fade-up">
+                <div class="terminal-bar">
+                    <div class="lights">
+                        <span class="red"></span><span class="yellow"></span><span class="green"></span>
+                    </div>
+                    <span class="cmd-title">dimuthu_dev.exe</span>
+                </div>
+                <div class="terminal-body">
+                    <p><span class="prompt">>></span> status: <strong class="text-highlight">"Mechatronics Undergraduate @ USJ"</strong></p>
+                    
+                    <p><span class="prompt">>></span> live_telemetry:</p>
+                    <div class="iot-dashboard">
+                        <div class="stat-item">HEARTBEAT: <span id="heartbeat" class="status-pulse">ACTIVE</span></div>
+                        <div class="stat-item">TEMP: <span id="live-temp">28.4</span>°C</div>
+                        <div class="stat-item">UPTIME: <span id="uptime">00:00:00</span></div>
+                    </div>
+
+                    <p><span class="prompt">>></span> bio: <span class="text-muted-mono">Passionate mechatronics engineer bridging the gap between the digital and physical world. Equally at home debugging firmware or performing on stage.</span></p>
+
+                    <p><span class="prompt">>></span> list_skills:</p>
+                    <div class="skill-badges">
+                        <span class="badge"><i class="fas fa-robot"></i> ROS</span>
+                        <span class="badge"><i class="fas fa-microchip"></i> STM32/Arduino</span>
+                        <span class="badge"><i class="fas fa-theater-masks"></i> Drama</span>
+                        <span class="badge"><i class="fas fa-wifi"></i> IoT Systems</span>
+                        <span class="badge"><i class="fas fa-code"></i> C++ / Python</span>
+                        <span class="badge"><i class="fas fa-brain"></i> Machine Learning</span>
+                        <span class="badge"><i class="fas fa-drafting-compass"></i> CAD Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="section bg-dim">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">02. SKILL MATRIX</h2>
+
+            <div class="skills-grid">
+                <div class="skills-column" data-aos="fade-right" data-aos-delay="100">
+                    <h3 class="skills-col-title"><i class="fas fa-cog"></i> Engineering</h3>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>ROS / Robotics</span><span class="skill-pct">85%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>Arduino / STM32</span><span class="skill-pct">92%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>C++ / Embedded C</span><span class="skill-pct">80%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>IoT System Design</span><span class="skill-pct">88%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>Python / ML</span><span class="skill-pct">75%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>CAD / SolidWorks</span><span class="skill-pct">70%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+                    </div>
+                </div>
+
+                <div class="skills-column" data-aos="fade-left" data-aos-delay="200">
+                    <h3 class="skills-col-title"><i class="fas fa-star"></i> Creative & Soft</h3>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>Stage Performance</span><span class="skill-pct">95%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95" style="--bar-color: var(--secondary)"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>Scriptwriting</span><span class="skill-pct">82%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82" style="--bar-color: var(--secondary)"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>Leadership</span><span class="skill-pct">78%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78" style="--bar-color: var(--secondary)"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>Video Production</span><span class="skill-pct">70%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70" style="--bar-color: var(--secondary)"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>Problem Solving</span><span class="skill-pct">90%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90" style="--bar-color: var(--secondary)"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>Team Collaboration</span><span class="skill-pct">88%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88" style="--bar-color: var(--secondary)"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE / ORGS ===================== -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">03. ORGANIZATIONS</h2>
+            <div class="org-grid">
+                <div class="org-card" data-aos="fade-up" data-aos-delay="0">
+                    <img src="assets/ieee_logo.webp" alt="IEEE Logo" class="org-logo">
+                    <div class="org-body">
+                        <h3>IEEE Student Branch</h3>
+                        <p class="org-role">Student Member</p>
+                        <p class="org-desc">Active member of the IEEE Student Branch at USJ, participating in technical workshops, seminars, and hackathons.</p>
+                    </div>
+                </div>
+                <div class="org-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/mtss_logo.webp" alt="MTSS Logo" class="org-logo">
+                    <div class="org-body">
+                        <h3>MTSS</h3>
+                        <p class="org-role">Drama & Arts Division</p>
+                        <p class="org-desc">Member of the Media, Technology & Stage Society. Performed in multiple national-level stage productions.</p>
+                    </div>
+                </div>
+                <div class="org-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/dwi_logo.webp" alt="DWI Logo" class="org-logo">
+                    <div class="org-body">
+                        <h3>DWI Creative Studio</h3>
+                        <p class="org-role">Actor & Writer</p>
+                        <p class="org-desc">Content creator and scriptwriter producing digital awareness campaigns and short films.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section bg-dim">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">04. PROJECTS</h2>
+            
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card glow-effect" data-aos="flip-up">
+                    <div class="card-header-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3>CO2-Sync Monitor</h3>
+                        <p>NodeMCU & MH-Z19 system with retroactive time-syncing algorithms for accurate CO2 data logging.</p>
+                        <div class="tags">
+                            <span>IOT</span><span>C++</span><span>NodeMCU</span>
+                        </div>
+                        <div class="btn-row">
+                            <a href="code/NODMCU_Data_Res_CO2.ino" class="code-link" download>Server Code</a>
+                            <a href="code/Arduino_nano_CO2_data.ino" class="code-link" download>Sensor Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glow-effect" data-aos="flip-up" data-aos-delay="100">
+                    <div class="card-header-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3>Water Quality Bot</h3>
+                        <p>Dual-MCU automated water analysis system with real-time CSV export capability & sensor fusion.</p>
+                        <div class="tags">
+                            <span>ARDUINO</span><span>ESP32</span>
+                        </div>
+                        <div class="btn-row">
+                            <a href="code/eSP_Water_Cleaning.ino" class="code-link" download>ESP32 Code</a>
+                            <a href="code/ARDUINO_Water_Cleaning.ino" class="code-link" download>Uno Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glow-effect" data-aos="flip-up" data-aos-delay="200">
+                    <div class="card-header-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3>Digital Organism Agent</h3>
+                        <p>Sentient-style DQN reinforcement learning agent with mood system, senses, and animated dark-mode GUI.</p>
+                        <div class="tags">
+                            <span>PYTHON</span><span>DQN</span><span>AI</span>
+                        </div>
+                        <div class="btn-row">
+                            <a href="#" class="code-link"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glow-effect" data-aos="flip-up" data-aos-delay="300">
+                    <div class="card-header-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3>Chiptro IDE</h3>
+                        <p>Custom Arduino IDE alternative with built-in QA automation, COM port management, and board flashing tools.</p>
+                        <div class="tags">
+                            <span>ELECTRON</span><span>ARDUINO</span><span>QA</span>
+                        </div>
+                        <div class="btn-row">
+                            <a href="#" class="code-link"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 — PSA Video -->
+                <div class="project-card" data-aos="flip-up" data-aos-delay="400">
+                    <div class="card-image">
+                        <img src="assets/PSA.webp" alt="PSA Performance">
+                        <div class="play-overlay">
+                            <a href="https://www.youtube.com/@thedwi2593/shorts" target="_blank" class="play-btn"><i class="fas fa-play"></i> WATCH</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>ReconnectUs PSA</h3>
+                        <p>Acting & Scriptwriting for digital awareness campaigns targeting digital addiction.</p>
+                        <div class="tags">
+                            <span>VIDEO</span><span>SCRIPT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ACHIEVEMENTS TIMELINE ===================== -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">05. TIMELINE</h2>
+            <div class="timeline-list" data-aos="fade-up">
+
+                <div class="timeline-item">
+                    <div class="marker"></div>
+                    <div class="content">
+                        <span class="year">2026</span>
+                        <h3>AI/ML Research</h3>
+                        <h4>Digital Organism & Chiptro IDE Projects</h4>
+                        <p>Built a reinforcement-learning digital organism and a custom Arduino IDE with QA automation.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="marker"></div>
+                    <div class="content">
+                        <span class="year">2025</span>
+                        <h3>IoT Research Projects</h3>
+                        <h4>University of Sri Jayewardenepura</h4>
+                        <p>Developed CO2-Sync Monitor and Water Quality Bot, presented at faculty engineering exhibitions.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="marker"></div>
+                    <div class="content">
+                        <span class="year">2024</span>
+                        <h3>ReconnectUs PSA Production</h3>
+                        <h4>DWI Creative Studio</h4>
+                        <p>Wrote the script and performed as lead actor in a nationally-shared digital wellness public service announcement.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="marker"></div>
+                    <div class="content">
+                        <span class="year">2023</span>
+                        <h3>IEEE Student Membership</h3>
+                        <h4>IEEE Sri Lanka Section</h4>
+                        <p>Joined IEEE student branch, attended workshops in embedded systems and robotics.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="marker"></div>
+                    <div class="content">
+                        <span class="year">2022</span>
+                        <h3>BSc Mechatronics Engineering</h3>
+                        <h4>University of Sri Jayewardenepura</h4>
+                        <p>Commenced undergraduate studies in Mechatronics Engineering, specializing in robotics, IoT, and embedded systems.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== GALLERY ===================== -->
+    <section id="gallery" class="section bg-dim">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">06. ME AT STAGE</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in" data-index="0">
+                    <img src="assets/drama1.webp" alt="Drama 1">
+                    <div class="gallery-caption">Stage Performance</div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100" data-index="1">
+                    <img src="assets/drama2.webp" alt="Drama 2">
+                    <div class="gallery-caption">Drama Production</div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200" data-index="2">
+                    <img src="assets/drama3.webp" alt="Drama 3">
+                    <div class="gallery-caption">Character Work</div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300" data-index="3">
+                    <img src="assets/drama4.webp" alt="Drama 4">
+                    <div class="gallery-caption">Stage Direction</div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400" data-index="4">
+                    <img src="assets/drama5.webp" alt="Drama 5">
+                    <div class="gallery-caption">Live Performance</div>
+                </div>
+            </div>
+            <p class="gallery-hint"><i class="fas fa-expand"></i> Click any photo to expand</p>
+        </div>
+    </section>
+
+    <!-- Lightbox Overlay -->
+    <div id="lightbox" class="lightbox-overlay">
+        <button id="lightbox-close" class="lightbox-close"><i class="fas fa-times"></i></button>
+        <button id="lightbox-prev" class="lightbox-nav"><i class="fas fa-chevron-left"></i></button>
+        <img id="lightbox-img" src="" alt="Gallery fullscreen">
+        <button id="lightbox-next" class="lightbox-nav"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title center" data-aos="fade-up">07. CONTACT ME</h2>
+
+            <div class="contact-grid" data-aos="fade-up" data-aos-delay="100">
+                <!-- Contact Form -->
+                <div class="terminal-card contact-form-card">
+                    <div class="terminal-bar">
+                        <div class="lights">
+                            <span class="red"></span><span class="yellow"></span><span class="green"></span>
+                        </div>
+                        <span class="cmd-title">send_message.sh</span>
+                    </div>
+                    <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-field">
+                            <label class="form-label"><span class="prompt">>></span> name:</label>
+                            <input type="text" class="form-input" id="form-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-label"><span class="prompt">>></span> email:</label>
+                            <input type="email" class="form-input" id="form-email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-label"><span class="prompt">>></span> message:</label>
+                            <textarea class="form-input form-textarea" id="form-msg" placeholder="Type your message..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn form-submit">
+                            <i class="fas fa-paper-plane"></i> TRANSMIT
+                        </button>
+                        <p id="form-status" class="form-status"></p>
+                    </form>
+                </div>
+
+                <!-- Social Links -->
+                <div class="contact-social-col" data-aos="fade-up" data-aos-delay="200">
+                    <p class="contact-cta">Let's build something extraordinary together.</p>
+                    <div class="social-links vertical">
+                        <a href="https://www.linkedin.com/in/dimuthu-prabodha-83041a14b" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://wa.me/+94785890653" target="_blank" class="social-btn">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="mailto:dimuthupraboda14@gmail.com" class="social-btn">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://github.com/hibutta" target="_blank" class="social-btn">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <p>&copy; 2026 DIMUTHU PRABODHA &mdash; Built with <span class="footer-heart">⚡</span> in Sri Lanka</p>
+            </footer>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
